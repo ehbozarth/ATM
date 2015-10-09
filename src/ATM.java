@@ -1,11 +1,8 @@
 /**
  * Created by earlbozarth on 10/9/15.
- */import java.util.*;
-
-/**
-
- Created by earlbozarth on 10/8/15.
  */
+import java.util.*;
+
 
 public class ATM {
 
