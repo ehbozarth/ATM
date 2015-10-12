@@ -8,7 +8,7 @@ public class ATM {
 
     static Account acct;
 
-    public static String run() throws Exception{
+    public static void main(String [] args) throws Exception{
 
         acct = new Account();
         HashMap <String, Double>  accounts = new HashMap();
@@ -30,3 +30,6 @@ public class ATM {
     }
 
 }//End of ATM Class
+
+
+
