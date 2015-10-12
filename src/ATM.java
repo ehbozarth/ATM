@@ -27,7 +27,7 @@ public class ATM {
             throw new Exception("Your entry was not valid");
         }
         return s;
-    }
+    }//End of nextLine
 
 }//End of ATM Class
 
