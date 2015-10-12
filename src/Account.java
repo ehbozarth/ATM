@@ -8,9 +8,7 @@ public class Account {
     String accName;
     double balance;
 
-    HashMap <String, Double>  accounts = new HashMap();
-
-    void chooseName() throws Exception {
+    void chooseName(HashMap<String, Double> accounts) throws Exception {
         System.out.println("What the name for your account?");
         accName = ATM.nextLine();
 
@@ -29,7 +27,7 @@ public class Account {
         }
     }//end of Choose Name
 
-    void getChoice() throws Exception {
+    void selectChoice(HashMap<String, Double> accounts) throws Exception {
         System.out.println("What you like to do today? Please use number");
         System.out.println("[1] Check My Balance");
         System.out.println("[2] Withdraw Funds");
@@ -71,6 +69,6 @@ public class Account {
             System.out.println("Removing account " + accName);
             accounts.remove(accName);
         }
-    }//End of getChoice
+    }//End of selectChoice
 
 }//End of Account Class

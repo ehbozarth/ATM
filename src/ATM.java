@@ -8,14 +8,14 @@ public class ATM {
 
     static Account acct;
 
-
     public static String run() throws Exception{
 
         acct = new Account();
+        HashMap <String, Double>  accounts = new HashMap();
 
         while (true){
-            acct.chooseName();
-            acct.getChoice();
+            acct.chooseName(accounts);
+            acct.selectChoice(accounts);
         }//End of while loop
 
     }//End of run()
